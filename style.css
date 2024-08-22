@@ -1,0 +1,78 @@
+body {
+	font-family: Arial, sans-serif;
+}
+
+#message-container {
+	position: relative;
+	text-align: center;
+}
+
+#message {
+	font-size: 20px;
+	font-weight: bold;
+	animation: message 2s ;
+}
+
+@keyframes message {
+	0% {
+		transform: translateY(100%);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+#poem-container, #image-container {
+	display: none;
+}
+
+#poem {
+	font-size: 24px;
+	font-weight: bold;
+	animation: poem 2s ;
+}
+
+@keyframes poem {
+	0% {
+		transform: translateY(100%);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+
+#next-btn, #next-btn2, #next-btn3 {
+	background-color: #4CAF50;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#next-btn:hover, #next-btn2:hover, #next-btn3:hover {
+	background-color: #3e8e41;
+}
+
+#message, #poem, #image-text {
+	text-align: center;
+}
+
+#next-btn2 {
+	margin-top: 5%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+#next-btn3 {
+	margin-top: 5%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
